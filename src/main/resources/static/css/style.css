@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
+
+/*
+* px  : absoulate value
+* vw  : absoulate value
+* vh  : absoulate value
+* %   : relative to parent
+* em  : relative to parent (for font only)
+* rem : relative to root (for font only)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-background-color: #f8f9fa;
+    --secondary-background-color: #ffffff;
+
+    --primary-link-color: #0c01fe;
+    --secondary-link-color: #070180;
+
+    --primary-txt-color: #000000;
+    --secondary-txt-color: #444444;
+
+    --primary-button-color: #0c01fe;
+    --primary-button-text-color: #ffffff;
+
+    --regular-font: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: var(--primary-background-color);
+    font-family: var(--regular-font);
+}
+
+a:link {
+    text-decoration: none;
+    color: var(--primary-link-color);
+}
+
+a:visited {
+    text-decoration: none;
+    color: var(--primary-link-color);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--secondary-link-color);
+}
+
+a:active {
+    text-decoration: none;
+    color: var(--secondary-link-color);
+}
+
+/* Override Bootstrap navbar */
+.navbar-nav a:link {
+    color: var(--primary-link-color);
+}
+
+.navbar-nav a:visited {
+    color: var(--primary-link-color);
+}
+
+.navbar-nav a:hover {
+    color: var(--secondary-link-color);
+}
+
+.navbar-nav a:active {
+    color: var(--secondary-link-color);
+}
+
+.custom_navbar {
+    font-size: 1rem;
+    box-shadow: 1px 1px rgb(238, 238, 238);
+}
+
+/* Button Style */
+.button_style {
+    background-color: var(--primary-button-color);
+    border: none;
+    color: var(--primary-button-text-color);
+    height: 35px;
+    width: 85px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px #ccc;
+    cursor: pointer;
+}
+
+/* Search Box */
+
+.section_container {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+}
+
+.search_txt {
+    padding-top: 10vh;
+    text-align: center;
+}
+
+.search_box {
+    text-align: center;
+}
+
+.search_box select {
+    padding-left: 10px;
+    width: 250px;
+    height: 35px;
+    border: 1px solid rgb(179, 179, 179);
+    font-size: 1rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px #ccc;
+}
+
+/*hero image*/
+
+.hero_background {
+    padding-top: 10vh;
+    width: 100%;
+    box-shadow: 1px 1px #ccc;
+}
+
+/* Lastest Doctors */
+
+/* How works */
+
+/* Login & Registration */
+
+.login_container {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-top: 26vh;
+    padding-bottom: 26vh;
+}
+
+.reg_container {
+    display: flex;
+    flex-flow: wrap column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding-top: 18vh;
+    padding-bottom: 18vh;
+}
+
+.login_reg_input {
+    width: 40vw;
+    height: 7vh;
+    padding-left: 10px;
+    border: 1px solid rgb(179, 179, 179);
+    background: var(--secondary-background-color);
+    border-radius: 5px;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--secondary-background-color);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0px -2px rgb(238, 238, 238);
+}
