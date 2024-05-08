@@ -12,23 +12,23 @@ public class HomeController {
     public String rootPage(Model model) {
         SearchElement searchElement = SearchElement.getInstance();
         model.addAttribute(searchElement);
-        return "/index.html";
+        return "/index";
     }
 
-    @GetMapping("/index.html")
+    @GetMapping("/index")
     public String indexPage(Model model) {
         SearchElement searchElement = SearchElement.getInstance();
         model.addAttribute(searchElement);
-        return "/index.html";
+        return "/index";
     }
 
-    @GetMapping("/login.html")
+    @GetMapping("/login")
     public String loginPage() {
-        return "/login.html";
+        return "/login";
     }
 
-    @GetMapping("/registration.html")
+    @GetMapping("/registration")
     public String registrationPage() {
-        return "/registration.html";
+        return "/registration";
     }
 }

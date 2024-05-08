@@ -20,7 +20,8 @@
 	<section>
 			<form class="login_container" action="/loginuser" method="POST">
 				<h3>Login Now</h3>
-				<p style="color: red;" th:text="${loginerror}"></p>
+				<p th:if="${loginerror}" style="color: red;" th:text="${loginerror}"></p>
+				<p th:if="${regsuccess}" style="color: green;" th:text="${regsuccess}"></p>
 				<input type="email" name="email" placeholder="Enter email" class="login_reg_input" required>
 				<input type="password" name="password" placeholder="Enter password" class="login_reg_input" required>
 				<button type="submit" class="button_style">Login</button>

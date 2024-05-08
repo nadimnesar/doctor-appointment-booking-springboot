@@ -18,9 +18,9 @@
 	</section>
 
 	<section>
-		<form class="reg_container" action="/adduser" method="POST">
+		<form class="reg_container" action="#" th:action="@{/adduser}" method="POST">
 			<h3>Registration Now</h3>
-			<p style="color: red;" th:text="${regerror}"></p>
+			<p th:if="${regerror}" style="color: red;" th:text="${regerror}"></p>
 			<input type="text"  name="name" required placeholder="Enter Name" class="login_reg_input">
 			<input type="email" name="email" required placeholder="Enter Email" class="login_reg_input">
 			<input type="password" name="password" required placeholder="Enter Password" class="login_reg_input">
@@ -36,7 +36,6 @@
 	<section>
 		<div th:insert="footer.html :: footer"></div>
 	</section>
-
 	<!-- Bootstrap JS -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
