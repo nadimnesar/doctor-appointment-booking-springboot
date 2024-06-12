@@ -1,6 +1,15 @@
 package com.drappointment.main.model;
 
+
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "users")
 public class UserClass {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
     private String name;
     private String email;
     private String password;
@@ -11,6 +20,14 @@ public class UserClass {
         this.email = email;
         this.password = password;
         this.type = type;
+    }
+
+    public UserClass() {
+
+    }
+
+    public Integer getId() {
+        return id;
     }
 
     public String getName() {
