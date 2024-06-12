@@ -11,7 +11,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 public class LoginController {
-    @PostMapping("/loginuser")
+    @PostMapping("/loginUser")
     public String loginUser(@RequestParam("email") String email,
                             @RequestParam("password") String password, RedirectAttributes redirectAttributes) {
 
@@ -30,7 +30,7 @@ public class LoginController {
             return "redirect:/";
         }
 
-        redirectAttributes.addFlashAttribute("loginerror", "This email or password is incorrect!");
+        redirectAttributes.addFlashAttribute("loginError", "This email or password is incorrect!");
         return "redirect:/login";
     }
 }

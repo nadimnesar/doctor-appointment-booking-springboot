@@ -9,9 +9,9 @@
 	</section>
 
 	<section>
-		<form class="reg_container" action="#" th:action="@{/adduser}" method="POST">
+		<form class="reg_container" action="#" th:action="@{/addUser}" method="POST">
 			<h3>Registration Now</h3>
-			<p th:if="${regerror}" style="color: red;" th:text="${regerror}"></p>
+			<p th:if="${regError}" style="color: red;" th:text="${regError}"></p>
 			<input type="text"  name="name" required placeholder="Enter Name" class="login_reg_input">
 			<input type="email" name="email" required placeholder="Enter Email" class="login_reg_input">
 			<input type="password" name="password" required placeholder="Enter Password" class="login_reg_input">

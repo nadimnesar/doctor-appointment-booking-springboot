@@ -9,14 +9,14 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @Controller
 public class RegistrationController {
-    @PostMapping("/adduser")
+    @PostMapping("/addUser")
     public String addUser(@ModelAttribute UserClass userClass, RedirectAttributes redirectAttributes) {
         if (!RegistrationData.validate(userClass)) {
-            redirectAttributes.addFlashAttribute("regerror", "This email already exists.");
+            redirectAttributes.addFlashAttribute("regError", "This email already exists.");
             return "redirect:/registration";
         }
         RegistrationData.save(userClass);
-        redirectAttributes.addFlashAttribute("regsuccess", "Registration successful, login now.");
+        redirectAttributes.addFlashAttribute("regSuccess", "Registration successful, login now.");
         return "redirect:/login";
     }
 }
