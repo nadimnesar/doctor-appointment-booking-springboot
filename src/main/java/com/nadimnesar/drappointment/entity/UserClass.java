@@ -1,4 +1,4 @@
-package com.drappointment.main.model;
+package com.nadimnesar.drappointment.entity;
 
 
 import jakarta.persistence.*;

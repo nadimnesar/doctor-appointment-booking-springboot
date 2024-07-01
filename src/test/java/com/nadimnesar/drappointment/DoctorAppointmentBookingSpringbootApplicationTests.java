@@ -1,4 +1,4 @@
-package com.drappointment.main;
+package com.nadimnesar.drappointment;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

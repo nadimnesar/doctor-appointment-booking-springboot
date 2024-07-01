@@ -1,6 +1,6 @@
-package com.drappointment.main.controller;
+package com.nadimnesar.drappointment.controller;
 
-import com.drappointment.main.service.SearchElement;
+import com.nadimnesar.drappointment.service.SearchElement;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

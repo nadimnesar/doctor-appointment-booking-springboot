@@ -1,7 +1,7 @@
-package com.drappointment.main.service;
+package com.nadimnesar.drappointment.service;
 
-import com.drappointment.main.model.UserClass;
-import com.drappointment.main.repository.UserRepo;
+import com.nadimnesar.drappointment.entity.UserClass;
+import com.nadimnesar.drappointment.repository.UserRepo;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

@@ -1,7 +1,7 @@
-package com.drappointment.main.controller;
+package com.nadimnesar.drappointment.controller;
 
-import com.drappointment.main.model.UserClass;
-import com.drappointment.main.service.RegistrationData;
+import com.nadimnesar.drappointment.entity.UserClass;
+import com.nadimnesar.drappointment.service.RegistrationData;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;

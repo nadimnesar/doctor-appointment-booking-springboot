@@ -1,6 +1,6 @@
-package com.drappointment.main.repository;
+package com.nadimnesar.drappointment.repository;
 
-import com.drappointment.main.model.UserClass;
+import com.nadimnesar.drappointment.entity.UserClass;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;

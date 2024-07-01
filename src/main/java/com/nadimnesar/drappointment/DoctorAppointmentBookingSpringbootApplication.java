@@ -1,4 +1,4 @@
-package com.drappointment.main;
+package com.nadimnesar.drappointment;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
