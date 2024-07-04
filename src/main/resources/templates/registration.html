@@ -9,16 +9,15 @@
 
         <!-- Registration Form Section -->
         <section>
-            <form class="reg_container" action="#" th:action="@{/addUser}" method="POST">
+            <form class="reg_container" th:action="@{registration/addUser}" method="POST">
                 <h3>Registration Now</h3>
                 <p th:if="${regError}" style="color: red;" th:text="${regError}"></p>
-                <input type="text" name="name" required placeholder="Enter Name" class="login_reg_input">
-                <input type="email" name="email" required placeholder="Enter Email" class="login_reg_input">
+                <input type="username" name="username" required placeholder="Enter Username" class="login_reg_input">
                 <input type="password" name="password" required placeholder="Enter Password" class="login_reg_input">
-                <select name="type" class="login_reg_input">
-                    <option value="patient">Patient</option>
-                    <option value="doctor">Doctor</option>
-                    <option value="admin">Admin</option>
+                <select name="role" class="login_reg_input">
+                    <option value="PATIENT">Patient</option>
+                    <option value="DOCTOR">Doctor</option>
+                    <option value="ADMIN">Admin</option>
                 </select>
                 <button type="submit" class="button_style">Signup</button>
             </form>
