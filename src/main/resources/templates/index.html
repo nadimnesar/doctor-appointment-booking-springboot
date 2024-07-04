@@ -1,50 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<div th:insert="header.html :: header('DrAppointment | Home')"></div>
+<!-- Header Section -->
+<header th:insert="fragments/header.html :: header('DrAppointment | Home', '/css/index.css')"></header>
 <body>
-	<section>
-		<div th:insert="navbar.html :: navbar"></div>
-	</section>
+    <main>
+        <!-- Navbar Section -->
+        <nav th:insert="fragments/navbar.html :: navbar"></nav>
 
-	<section class="section_container">
-		<div class="search_txt">
-			<h1>Find Your Doctor, Make an Appointment</h1>
-			<p>Discover the best doctors from the nearest city you live.</p>
-		</div>
-		<div class="search_box">
-			<form action="search.html" method="GET">
-				<select name="divison" >
-					<option value="">Search by Division</option>
-					<div th:each="s: ${searchElement.getDivisionList()}">
-						<option th:value="${s}" th:text="${s}"></option>
-					</div>
-				</select>
-				<select name="district">
-					<option value="">Search by District</option>
-					<div th:each="s: ${searchElement.getDistrictList()}">
-						<option th:value="${s}" th:text="${s}"></option>
-					</div>
-				</select>
-				<select name="specialty">
-					<option value="">Search by Specialty</option>
-					<div th:each="s: ${searchElement.getSpecialtyList()}">
-						<option th:value="${s}" th:text="${s}"></option>
-					</div>
-				</select>
-				<input type="submit" value="Search" class="button_style">
-			</form>
-		</div>
-	</section>
+        <!-- Search Section -->
+        <section class="section_container">
+            <div class="search_txt">
+                <h1>Find Your Doctor, Make an Appointment</h1>
+                <p>Discover the best doctors from the nearest city you live.</p>
+            </div>
+            <div class="search_box">
+                <form action="search.html" method="GET">
+                    <select name="divison">
+                        <option value="">Search by Division</option>
+                        <div th:each="s: ${searchElement.getDivisionList()}">
+                            <option th:value="${s}" th:text="${s}"></option>
+                        </div>
+                    </select>
+                    <select name="district">
+                        <option value="">Search by District</option>
+                        <div th:each="s: ${searchElement.getDistrictList()}">
+                            <option th:value="${s}" th:text="${s}"></option>
+                        </div>
+                    </select>
+                    <select name="specialty">
+                        <option value="">Search by Specialty</option>
+                        <div th:each="s: ${searchElement.getSpecialtyList()}">
+                            <option th:value="${s}" th:text="${s}"></option>
+                        </div>
+                    </select>
+                    <input type="submit" value="Search" class="button_style">
+                </form>
+            </div>
+        </section>
 
-	<section>
-		<img class="hero_background" src="/img/hero_background.png">
-	</section>
-
-	<section>
-		<div th:insert="footer.html :: footer"></div>
-	</section>
-
-	<!-- Bootstrap JS -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Hero Image Section -->
+        <section>
+            <img class="hero_background" src="/img/hero_background.png" alt="Hero Background">
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer th:insert="fragments/footer.html :: footer"></footer>
 </body>
 </html>

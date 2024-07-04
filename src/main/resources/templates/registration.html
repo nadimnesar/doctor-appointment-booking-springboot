@@ -1,33 +1,30 @@
 <!DOCTYPE html>
-<html lang="en"
-	  xmlns="http://www.w3.org/1999/xhtml"
-	  xmlns:th="http://www.thymeleaf.org">
-<div th:insert="header.html :: header('DrAppointment | Registration')"></div>
+<html lang="en">
+<!-- Header Section -->
+<header th:insert="fragments/header.html :: header('DrAppointment | Registration', '/css/registration.css')"></header>
 <body>
-	<section>
-		<div th:insert="navbar.html :: navbar"></div>
-	</section>
+    <main>
+        <!-- Navbar Section -->
+        <nav th:insert="fragments/navbar.html :: navbar"></nav>
 
-	<section>
-		<form class="reg_container" action="#" th:action="@{/addUser}" method="POST">
-			<h3>Registration Now</h3>
-			<p th:if="${regError}" style="color: red;" th:text="${regError}"></p>
-			<input type="text"  name="name" required placeholder="Enter Name" class="login_reg_input">
-			<input type="email" name="email" required placeholder="Enter Email" class="login_reg_input">
-			<input type="password" name="password" required placeholder="Enter Password" class="login_reg_input">
-			<select name="type" class="login_reg_input">
-				<option value="patient">Patient</option>
-				<option value="doctor">Doctor</option>
-				<option value="admin">Admin</option>
-			</select>
-			<button type="submit" class="button_style">Signup</button>
-		</form>
-	</section>
-
-	<section>
-		<div th:insert="footer.html :: footer"></div>
-	</section>
-	<!-- Bootstrap JS -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Registration Form Section -->
+        <section>
+            <form class="reg_container" action="#" th:action="@{/addUser}" method="POST">
+                <h3>Registration Now</h3>
+                <p th:if="${regError}" style="color: red;" th:text="${regError}"></p>
+                <input type="text" name="name" required placeholder="Enter Name" class="login_reg_input">
+                <input type="email" name="email" required placeholder="Enter Email" class="login_reg_input">
+                <input type="password" name="password" required placeholder="Enter Password" class="login_reg_input">
+                <select name="type" class="login_reg_input">
+                    <option value="patient">Patient</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <button type="submit" class="button_style">Signup</button>
+            </form>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer th:insert="fragments/footer.html :: footer"></footer>
 </body>
 </html>

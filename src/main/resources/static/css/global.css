@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;500;600;700;800&family=Roboto:wght@400;500;700&display=swap');
 
 /*
-* px  : absoulate value
-* vw  : absoulate value
-* vh  : absoulate value
+* px  : absolute value
+* vw  : absolute value
+* vh  : absolute value
 * %   : relative to parent
 * em  : relative to parent (for font only)
 * rem : relative to root (for font only)
@@ -92,76 +92,6 @@ a:active {
     cursor: pointer;
 }
 
-/* Search Box */
-
-.section_container {
-    display: flex;
-    flex-flow: wrap column;
-    align-items: center;
-}
-
-.search_txt {
-    padding-top: 10vh;
-    text-align: center;
-}
-
-.search_box {
-    text-align: center;
-}
-
-.search_box select {
-    padding-left: 10px;
-    width: 250px;
-    height: 35px;
-    border: 1px solid rgb(179, 179, 179);
-    font-size: 1rem;
-    border-radius: 5px;
-    box-shadow: 1px 1px #ccc;
-}
-
-/*hero image*/
-
-.hero_background {
-    padding-top: 10vh;
-    width: 100%;
-    box-shadow: 1px 1px #ccc;
-}
-
-/* Lastest Doctors */
-
-/* How works */
-
-/* Login & Registration */
-
-.login_container {
-    display: flex;
-    flex-flow: wrap column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-    padding-top: 26vh;
-    padding-bottom: 26vh;
-}
-
-.reg_container {
-    display: flex;
-    flex-flow: wrap column;
-    align-items: center;
-    text-align: center;
-    gap: 10px;
-    padding-top: 18vh;
-    padding-bottom: 18vh;
-}
-
-.login_reg_input {
-    width: 40vw;
-    height: 7vh;
-    padding-left: 10px;
-    border: 1px solid rgb(179, 179, 179);
-    background: var(--secondary-background-color);
-    border-radius: 5px;
-}
-
 /* Footer */
 
 footer {
@@ -169,5 +99,5 @@ footer {
     text-align: center;
     padding-top: 20px;
     padding-bottom: 20px;
-    box-shadow: 0px -2px rgb(238, 238, 238);
+    box-shadow: 0 -2px rgb(238, 238, 238);
 }

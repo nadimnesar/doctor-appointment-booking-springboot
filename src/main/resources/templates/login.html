@@ -1,28 +1,25 @@
 <!DOCTYPE html>
-<html lang="en"
-	  xmlns="http://www.w3.org/1999/xhtml"
-	  xmlns:th="http://www.thymeleaf.org">
-<div th:insert="header.html :: header('DrAppointment | Login')"></div>
+<html lang="en">
+<!-- Header Section -->
+<header th:insert="fragments/header.html :: header('DrAppointment | Login', '/css/login.css')"></header>
 <body>
-	<section>
-		<div th:insert="navbar.html :: navbar"></div>
-	</section>
-	<section>
-			<form class="login_container" th:action="@{/loginUser}" method="POST">
-				<h3>Login Now</h3>
-				<p th:if="${loginError}" style="color: red;" th:text="${loginError}"></p>
-				<p th:if="${regSuccess}" style="color: green;" th:text="${regSuccess}"></p>
-				<input type="email" name="email" placeholder="Enter email" class="login_reg_input" required>
-				<input type="password" name="password" placeholder="Enter password" class="login_reg_input" required>
-				<button type="submit" class="button_style">Login</button>
-			</form>
-	</section>
+    <main>
+        <!-- Navbar Section -->
+        <nav th:insert="fragments/navbar.html :: navbar"></nav>
 
-	<section>
-		<div th:insert="footer.html :: footer"></div>
-	</section>
-
-	<!-- Bootstrap JS -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Login Form Section -->
+        <section>
+            <form class="login_container" th:action="@{/loginUser}" method="POST">
+                <h3>Login Now</h3>
+                <p th:if="${loginError}" style="color: red;" th:text="${loginError}"></p>
+                <p th:if="${regSuccess}" style="color: green;" th:text="${regSuccess}"></p>
+                <input type="email" name="email" placeholder="Enter email" class="login_reg_input" required>
+                <input type="password" name="password" placeholder="Enter password" class="login_reg_input" required>
+                <button type="submit" class="button_style">Login</button>
+            </form>
+        </section>
+    </main>
+    <!-- Footer Section -->
+    <footer th:insert="fragments/footer.html :: footer"></footer>
 </body>
 </html>
