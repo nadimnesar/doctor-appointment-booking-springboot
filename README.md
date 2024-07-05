@@ -6,3 +6,10 @@ Seamless doctor appointment scheduling, featuring user registration, login, doct
 
 ## Home Page
 ![homepage.png](src/main/resources/static/img/homepage.png)
+
+
+## Login Page
+![login.png](src/main/resources/static/img/login.png)
+
+## Registration Page
+![reg.png](src/main/resources/static/img/reg.png)
