@@ -1,7 +1,8 @@
 # Doctor Appointment Booking Using Spring Boot
-
-## Contribute
-If you want to contribute, feel free to reach out to me via email at [nadimnesar.cse@gmail.com](mailto:nadimnesar.cse@gmail.com) or text me [Linkedin profile](https://www.linkedin.com/in/nadimnesar/).
+Seamless doctor appointment scheduling, featuring user registration, login, doctor search, appointment booking, and admin functionalities for doctor management.
 
 ## Use Case Diagram
-<img src="/src/main/resources/static/img/uml.png">
+<img src="/src/main/resources/static/img/uml.png" alt="ucd">
+
+## Home Page
+![homepage.png](src/main/resources/static/img/homepage.png)
